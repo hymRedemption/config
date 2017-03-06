@@ -1,0 +1,29 @@
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[user]
+	name = hymRedemption
+	email = he.redemption@gmail.com
+[alias]
+   l = log --graph --all --format=format:'%C(bold cyan)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+  co = checkout
+  ad = add
+  g = git
+  s = status
+  c = commit
+  ca = commit --amend
+  b = branch
+  mn = merge --no-ff
+  d = diff
+  pl = pull
+  cl = clone
+  p = push
+
+
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[core]
+	excludesfile = /Users/redemption/.gitignore_global
